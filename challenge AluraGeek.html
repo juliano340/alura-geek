@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Alura Geek</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <script>
+        // Função para obter o ano atual e exibi-lo na tela
+        function exibirAnoAtual() {
+            const dataAtual = new Date(); // Cria um objeto Date com a data e hora atuais
+            const anoAtual = dataAtual.getFullYear(); // Obtém o ano atual
+            const elementoAno = document.getElementById('ano-atual'); // Encontra o elemento onde vamos mostrar o ano
+            elementoAno.textContent = `Alura Latam - ${anoAtual}`; // Exibe o ano atual no elemento
+        }
+
+        // Chama a função quando a página é carregada
+        window.onload = exibirAnoAtual;
+    </script>
+    <script src="https://kit.fontawesome.com/0934ea43d0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>❤️❤️❤️ Alura Geek</h1>
+    </header>
+
+    <main>
+        <section>
+            <h1>MEUS PRODUTOS</h1>
+            <div class="product-container">
+
+                <div class="card">
+                    <img src="./public/img/mini-game-1.jpeg" alt="">
+                    <div class="card-container">
+                        <h1>Mini Game Sup</h1>
+                        <div class="card-container-price">
+                            <p>R$ 60,00 </p>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./public/img/mini-game-1.jpeg" alt="">
+                    <div class="card-container">
+                        <h1>Mini Game Sup</h1>
+                        <div class="card-container-price">
+                            <p>R$ 60,00 </p>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./public/img/mini-game-1.jpeg" alt="">
+                    <div class="card-container">
+                        <h1>Mini Game Sup</h1>
+                        <div class="card-container-price">
+                            <p>R$ 60,00 </p>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form action="submit">
+            <h1>CADASTRE SEU PRODUTO</h1>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Valor">
+            <input type="file" placeholder="Imagem">
+            <input type="button" value="Cadastrar">
+            <input type="button" value="Limpar">
+        </form>
+
+    </main>
+
+    <footer>
+        <h1>❤️❤️❤️ Alura Geek</h1>
+        <p>Desenvolvido por Juliano Pereira</p>
+        <p id='ano-atual'></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
