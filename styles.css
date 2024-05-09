@@ -6,11 +6,19 @@
     
 }
 
+:root {
+    --scrollbar-width: 10px;
+    --scrollbar-color: #5300C8;
+    --scrollbar-thumb-color: rgb(114, 114, 231);
+}
+
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;    
-    justify-content: flex-start
+    justify-content: space-between;
+    
+    
 }
 
 header {
@@ -36,19 +44,28 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 50px;    
+    
     
     
     
 }
 
 section {
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    width: 65%;
+
+    /* flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow-y: auto; 
+    max-height: 50vh; 
+    max-width: 50vw;  
+    box-shadow: 0px 0px 0px 0.1px #5300C8; */
+    
+    
     
    
 }
@@ -59,9 +76,15 @@ form {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+    width: 35%;
+}
+
+form h1 {
+    align-self: center;
 }
 
 input {
+    align-self: center;
     width: 300px;
     height: 30px;
     border-radius: 10px;
@@ -79,22 +102,38 @@ footer {
     color: #FFF;
     margin: 0px;
     padding: 25px 0px;
-    position: fixed;
-    bottom: 0; /* Fixa na parte de baixo da janela */
-    left: 0; /* Alinha ao lado esquerdo */
-    right: 0; /* Alinha ao lado direito */
     
+    
+}
+i {
+    cursor: pointer;
 }
 
 .product-container {
     
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 70%;
+    overflow: auto;
+    max-height: 70vh;   
 
-    
+}
 
+.product-container::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+
+.product-container::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-color);
+}
+
+.product-container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 5px;
 }
 
 .card-container-price{
@@ -104,8 +143,7 @@ footer {
 }
 
 .card {
-    width: 200px;
-    
+    width: 200px;    
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -117,8 +155,13 @@ footer {
 
 .card img {
     max-width: 100px;
+    min-height: 100px;
 }
 
 .card p {
     margin: 10px 0 0;
 }
+
+
+/////
+
