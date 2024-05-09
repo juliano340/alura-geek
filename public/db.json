@@ -1,0 +1,10 @@
+{
+    "produtos": [
+        {
+            "nome": "Mini Game",
+            "preco": "19.99",
+            "imagem": "https://picsum.photos/200/300",
+            "id": "1"
+        }
+    ]
+}

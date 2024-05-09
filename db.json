@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "nome": "Mini Game",
+      "preco": "19.99",
+      "imagem": "https://upload-arquivos.s3-sa-east-1.amazonaws.com/img/produtos_fotos/210758/48c0dde24f4ecbf7eb42e18b393b210f.png",
+      "id": "1"
+    },
+    {
+        "nome": "Mini Game",
+        "preco": "19.99",
+        "imagem": "https://upload-arquivos.s3-sa-east-1.amazonaws.com/img/produtos_fotos/210758/48c0dde24f4ecbf7eb42e18b393b210f.png",
+        "id": "1"
+      }
+  ]
+}
